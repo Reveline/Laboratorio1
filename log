@@ -28,3 +28,15 @@ exercises.c:91:18: error: assignment to ‘void *’ from ‘int’ makes pointe
    91 |       elementTop = Top(auxiliary_stack);
       |                  ^
 d7cdba9
+Fri Mar 20 06:11:18 PM UTC 2026: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:79:29: error: implicit declaration of function ‘createStack’; did you mean ‘create_stack’? [-Wimplicit-function-declaration]
+   79 |    Stack* auxiliary_stack = createStack();
+      |                             ^~~~~~~~~~~
+      |                             create_stack
+exercises.c:79:29: error: initialization of ‘Stack *’ {aka ‘List *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+cc63e3d
