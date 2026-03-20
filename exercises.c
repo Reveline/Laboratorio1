@@ -76,7 +76,7 @@ Puedes usar una pila auxiliar.
 */
 
 void copia_pila(Stack* P1, Stack* P2) {
-   Stack* auxiliary_stack = createStack();
+   Stack* auxiliary_stack = create_stack();
    void* elementTop = top(P1);
    while(elementTop != NULL){
       push(auxiliary_stack, elementTop);
