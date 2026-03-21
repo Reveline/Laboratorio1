@@ -87,6 +87,7 @@ void eliminaElementos(List*L, int elem){
    while(current_elem !=NULL){ 
       if (elem == (*current_elem)){
          popCurrent(L);
+         // BUSCAR COMO LIBERAR LA MEMORIA
       }
       current_elem = (int*)next(L);
    }
@@ -124,6 +125,8 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 */
 
 int parentesisBalanceados(char *cadena) {
+   Stack* auxiliary_stack = create_stack();
+   
    return 0;
 }
 

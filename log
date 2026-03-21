@@ -137,3 +137,14 @@ Sat Mar 21 02:42:41 PM UTC 2026:
  tests:  4|1
 total_score: 50/70
 0443eab
+Sat Mar 21 11:35:58 PM UTC 2026: 
+ exercises.c | 3 +++
+ 1 file changed, 3 insertions(+)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:128:11: error: unused variable ‘auxiliary_stack’ [-Werror=unused-variable]
+  128 |    Stack* auxiliary_stack = create_stack();
+      |           ^~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+3c0003d
