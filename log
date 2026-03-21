@@ -89,3 +89,9 @@ exercises.c:48:42: error: invalid application of ‘sizeof’ to incomplete type
    48 |       L = (List*) realloc (L, i * sizeof(List));
       |                                          ^~~~
 5e31f2e
+Sat Mar 21 01:59:12 PM UTC 2026: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+ tests:  2|3
+total_score: 20/70
+3b88d79
