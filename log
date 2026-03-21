@@ -46,3 +46,17 @@ Fri Mar 20 06:12:04 PM UTC 2026:
  tests:  1|4
 total_score: 10/70
 84d2ade
+Sat Mar 21 01:50:04 PM UTC 2026: 
+ exercises.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:48:42: error: invalid application of ‘sizeof’ to incomplete type ‘List’
+   48 |       L = (List*) realloc (L, i * sizeof(List));
+      |                                          ^~~~
+exercises.c:49:7: error: implicit declaration of function ‘PushCurrent’; did you mean ‘pushCurrent’? [-Wimplicit-function-declaration]
+   49 |       PushCurrent(L, i);
+      |       ^~~~~~~~~~~
+      |       pushCurrent
+8d9b3c4
