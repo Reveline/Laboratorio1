@@ -79,3 +79,13 @@ arraylist.h:23:33: note: expected ‘void *’ but argument is of type ‘int’
    23 | void pushCurrent(List *L, void *dato);
       |                           ~~~~~~^~~~
 c0e66c3
+Sat Mar 21 01:52:18 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:48:42: error: invalid application of ‘sizeof’ to incomplete type ‘List’
+   48 |       L = (List*) realloc (L, i * sizeof(List));
+      |                                          ^~~~
+5e31f2e
