@@ -60,3 +60,22 @@ exercises.c:49:7: error: implicit declaration of function ‘PushCurrent’; did
       |       ^~~~~~~~~~~
       |       pushCurrent
 8d9b3c4
+Sat Mar 21 01:51:10 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:48:42: error: invalid application of ‘sizeof’ to incomplete type ‘List’
+   48 |       L = (List*) realloc (L, i * sizeof(List));
+      |                                          ^~~~
+exercises.c:49:22: error: passing argument 2 of ‘pushCurrent’ makes pointer from integer without a cast [-Wint-conversion]
+   49 |       pushCurrent(L, i);
+      |                      ^
+      |                      |
+      |                      int
+In file included from exercises.c:6:
+arraylist.h:23:33: note: expected ‘void *’ but argument is of type ‘int’
+   23 | void pushCurrent(List *L, void *dato);
+      |                           ~~~~~~^~~~
+c0e66c3
