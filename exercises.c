@@ -68,7 +68,7 @@ int sumaLista(List *L) {
          sum += *current_elem;
          current_elem = (int*)next(L);;
       }
-   } while(current_elem !=Null);
+   } while(current_elem !=NULL);
    
    return 0;
 }
