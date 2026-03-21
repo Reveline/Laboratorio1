@@ -45,10 +45,12 @@ List* crea_lista() {
    List* L = create_list();
    
    for(int i = 1; i <= 10; i++){
-      int* current_elem =(int*) malloc(sizeof(int));
+      int *current_elem = (int*) malloc(sizeof(int));
       *current_elem = i;
+      //supongo que la lista vacia empieza en -1, por lo que PushCurrent insertara en 0
       pushCurrent(L, current_elem);
    }
+   
    return L;
 }
 
@@ -58,6 +60,16 @@ Crea una función que reciba una lista de enteros (int*) y
 retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
+   int *current_elem = first(L);
+   int sum = 0;
+
+   do {
+      if (current_elem !=NULL) {
+         sum += *current_elem;
+         current_elem = (int*)next(L);;
+      }
+   } while(current_elem !=Null);
+   
    return 0;
 }
 

@@ -95,3 +95,14 @@ Sat Mar 21 01:59:12 PM UTC 2026:
  tests:  2|3
 total_score: 20/70
 3b88d79
+Sat Mar 21 02:19:51 PM UTC 2026: 
+ exercises.c | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:71:27: error: ‘Null’ undeclared (first use in this function)
+   71 |    } while(current_elem !=Null);
+      |                           ^~~~
+exercises.c:71:27: note: each undeclared identifier is reported only once for each function it appears in
+08f3d8f
