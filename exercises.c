@@ -70,7 +70,7 @@ int sumaLista(List *L) {
       }
    } while(current_elem !=NULL);
    
-   return 0;
+   return sum;
 }
 
 /*
