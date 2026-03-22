@@ -158,6 +158,6 @@ int parentesisBalanceados(char *cadena) {
       } // FIN  for (int k....
    
    } //FIN for (int i = 0; cadena[i].....
-   return is_empty(auxiliary_stack) ? 1 : 0;
+   return (top(auxiliary_stack) == NULL) ? 1 : 0;
 }
 
