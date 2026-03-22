@@ -132,7 +132,9 @@ int parentesisBalanceados(char *cadena) {
    
    for (int i = 0; cadena[i] != '\0'; i++) {
       char c = cadena[i];
-      
+
+      //Cuando encuentres un paréntesis de apertura (como '(', '[', o '{'), agrégalo a la pila.
+
       for (int k = 0; k < 3; k++){
          if (c == open_p[k]){
             char *ptr = malloc(sizeof(char));
@@ -141,12 +143,14 @@ int parentesisBalanceados(char *cadena) {
             break;
          }
       }
-
+      //Si encuentras un paréntesis de cierre (como ')', ']', o '}'):
       for (int k = 0; k < 3; k++){
          if (c == closed_p[k]){
+            // Verifica si la pila está vacía.
             if (top(auxiliary_stack) == NULL) {
                return 0;
             }
+            //Si no está vacía, compara el paréntesis de cierre con el último paréntesis de apertura en la pila.
             char *ptr = (char*)pop(auxiliary_stack);
             char elementTop = *ptr;
             free(ptr);
