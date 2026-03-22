@@ -137,7 +137,7 @@ int parentesisBalanceados(char *cadena) {
          if (c == open_p[k]){
             char *ptr = malloc(sizeof(char));
             *ptr = c;
-            push(auxiliary_stack, (void*)ptr;
+            push(auxiliary_stack, (void*)ptr);
             break;
          }
       }
