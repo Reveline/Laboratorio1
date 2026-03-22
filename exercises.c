@@ -156,12 +156,13 @@ int parentesisBalanceados(char *cadena) {
             free(ptr);
             
             if (elementTop != open_p[k]){
-               return 0;
+               return 0; // Parentesis no cierra
             }
          } //FIN if (c...
       } // FIN  for (int k....
    
    } //FIN for (int i = 0; cadena[i].....
+   //Verificar si quedan elementos
    return (top(auxiliary_stack) == NULL) ? 1 : 0;
 }
 
