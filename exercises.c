@@ -134,7 +134,7 @@ int parentesisBalanceados(char *cadena) {
       
       for (int k = 0; k < 3; k++){
          if (c == open_p[k]){
-            push(auxiliary_stack, (void*)(c);
+            push(auxiliary_stack, (void*)(c));
             break;
          }
       }
