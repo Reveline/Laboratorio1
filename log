@@ -192,3 +192,24 @@ exercises.c:147:31: error: cast from pointer to integer of different size [-Werr
       |                               ^
 cc1: all warnings being treated as errors
 221fc7c
+Sun Mar 22 12:28:42 AM UTC 2026: 
+ exercises.c | 10 ++++++++--
+ 1 file changed, 8 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:140:45: error: expected ‘)’ before ‘;’ token
+  140 |             push(auxiliary_stack, (void*)ptr;
+      |                 ~                           ^
+      |                                             )
+exercises.c:141:19: error: expected ‘;’ before ‘}’ token
+  141 |             break;
+      |                   ^
+      |                   ;
+  142 |          }
+      |          ~         
+exercises.c:131:10: error: unused variable ‘ptr’ [-Werror=unused-variable]
+  131 |    char *ptr;
+      |          ^~~
+cc1: all warnings being treated as errors
+22f1935
