@@ -154,3 +154,27 @@ Sat Mar 21 11:36:09 PM UTC 2026:
  tests:  4|1
 total_score: 50/70
 b5885eb
+Sun Mar 22 12:18:47 AM UTC 2026: 
+ exercises.c | 27 ++++++++++++++++++++++++++-
+ 1 file changed, 26 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:137:35: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+  137 |             push(auxiliary_stack, (void*)(c);
+      |                                   ^
+exercises.c:137:45: error: expected ‘)’ before ‘;’ token
+  137 |             push(auxiliary_stack, (void*)(c);
+      |                 ~                           ^
+      |                                             )
+exercises.c:138:19: error: expected ‘;’ before ‘}’ token
+  138 |             break;
+      |                   ^
+      |                   ;
+  139 |          }
+      |          ~         
+exercises.c:147:31: error: cast from pointer to integer of different size [-Werror=pointer-to-int-cast]
+  147 |             char elementTop = (char)pop(auxiliary_stack);
+      |                               ^
+cc1: all warnings being treated as errors
+4cd3377
